@@ -7,9 +7,9 @@ class Client
     {
         $_now = time();
         $hour = date('H', $_now);
-        if ($hour > 0 && $hour < 12){
+        if ($hour >= 0 || $hour < 12){
             return 'Good morning';
-        } elseif ($hour > 0 && $hour < 12){
+        } elseif ($hour >= 12 || $hour < 18){
             return 'Good afternoon';
         } else {
             return 'Good evening';
