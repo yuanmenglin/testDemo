@@ -1,5 +1,4 @@
 <?php
-namespace MyGreeter;
 
 class Client
 {
