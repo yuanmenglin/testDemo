@@ -37,12 +37,12 @@ class Client1Test extends TestCase
         } elseif (get_class($this->greeter->client) == 'Morning') {
             $this->assertEquals(
                 $this->greeter->getGreeting(),
-                'Good Morning'
+                'Good Afternoon'
             );
         } else {
             $this->assertEquals(
                 $this->greeter->getGreeting(),
-                'Good Morning'
+                'Good Evening'
             );
         }
     }
